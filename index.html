@@ -34,7 +34,7 @@
     <header class="">
       <!-------------------------------- Navigation Bar ------------------------------------------------>
       <nav
-        class="flex flex-col md:flex-row justify-between gap-8 items-center p-2 md:p-10"
+        class="flex flex-col md:flex-row justify-between gap-8 items-center py-10 md:py-5 md:px-10"
       >
         <div class="flex items-center gap-2">
           <img class="w-13 h-13" src="assets/logo.png" alt="" />
@@ -44,17 +44,17 @@
         </div>
 
         <div class="flex gap-4 h-[52px]">
-          <div class="bg-[#FFEFF0] flex items-center px-7 rounded-full gap-2">
+          <div class="bg-[#FFEFF0] flex items-center justify-center px-7 rounded-full gap-2">
             <h5 class="font-semibold text-[20px]">0</h5>
             <img class="w-8 h-8" src="assets/heart.png" alt="" />
           </div>
 
-          <div class="bg-[#FEF7DA] flex items-center px-7 rounded-full gap-2">
+          <div class="bg-[#FEF7DA] flex items-center justify-center px-7 rounded-full gap-2">
             <h5 class="font-semibold text-[20px]">100</h5>
             <img class="w-8 h-8" src="assets/coin.png" alt="" />
           </div>
 
-          <div class="bg-[#00A63E] flex items-center px-7 rounded-full gap-2">
+          <div class="bg-[#00A63E] flex items-center justify-center px-7 rounded-full gap-2">
             <h5 class="text-white font-semibold text-[20px]">0</h5>
             <h5 class="text-white font-semibold text-[20px]">Copy</h5>
           </div>
@@ -75,9 +75,11 @@
       </section>
     </header>
 
-    <!-------------------------------- Card Section ------------------------------------------------>
+    
+    <main class="flex flex-col gap-10 md:flex-row justify-between p-8 md:p-20">
 
-    <main class="flex flex-col md:flex-row justify-between p-8 md:p-20">
+        <!-------------------------------- Card Section ------------------------------------------------>
+
       <section class="grid grid-cols-1 md:grid-cols-3 gap-15">
         <div
           class="flex flex-col gap-5 justify-between bg-white card w-full p-5 md:p-8 rounded-3xl shadow-[0_2px_6px_rgba(0,0,0,0.1)]"
@@ -116,8 +118,26 @@
         </div>
       </section>
 
-      <section class="h-full md:w-1/4 bg-white">
-        <h5>df</h5>
+    <!-------------------------------- SidBar Section ------------------------------------------------>
+
+      <section class=" h-full md:w-1/4 bg-white p-5 rounded-3xl shadow-[0_2px_6px_rgba(0,0,0,0.1)]">
+
+        <div class="flex items-center justify-between">
+        <h5 class="text-[24px] font-semibold"><i class="fa-regular fa-clock"></i> Call History</h5>
+        <button class="text-[18px] text-white py-3 px-8 rounded-full bg-[#00A63E]">Clear</button>
+        </div>
+
+        <div class="mt-4 flex flex-col gap-3">
+
+            <div class="bg-[#F6F6F6] px-5 py-3 rounded-2xl flex justify-between">
+                <div>
+                 <h2 class="font-medium text-[22px]">Fire Service Number</h2>
+                <p class="text-[24px] text-[#5C5C5C]">999</p>
+                </div>
+                <p class="text-[18px]">11:36:58 AM</p>
+            </div>
+        </div>
+
       </section>
     </main>
 
