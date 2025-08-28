@@ -14,9 +14,13 @@
 
     <!-- Font Awesome CDN  -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
-    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,8 +32,10 @@
   </head>
   <body class="bg-[#F5FFF6] hind-madurai">
     <header class="">
-<!-------------------------------- Navigation Bar ------------------------------------------------>
-      <nav class=" flex flex-col md:flex-row justify-between gap-8 items-center p-8">
+      <!-------------------------------- Navigation Bar ------------------------------------------------>
+      <nav
+        class="flex flex-col md:flex-row justify-between gap-8 items-center p-2 md:p-10"
+      >
         <div class="flex items-center gap-2">
           <img class="w-13 h-13" src="assets/logo.png" alt="" />
           <h5 class="font-bold text-[24px] leading-6 text-[#006747]">
@@ -54,56 +60,65 @@
           </div>
         </div>
       </nav>
-<!-------------------------------- Head Section ------------------------------------------------>
-      <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-10 flex flex-col items-center justify-center">
-
-        <img class="w-20" src="assets/logo-dark.png" alt="">
-        <h5 class="text-white font-semi-bold text-[42px] text-center">Emergency Service Directory</h5>
-        <p class="text-white font-semi-bold text-[22px] text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
-
+      <!-------------------------------- Hero Section ------------------------------------------------>
+      <section
+        class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] p-10 flex flex-col items-center justify-center"
+      >
+        <img class="w-20" src="assets/logo-dark.png" alt="" />
+        <h5 class="text-white font-semi-bold text-[42px] text-center">
+          Emergency Service Directory
+        </h5>
+        <p class="text-white font-semi-bold text-[22px] text-center">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
       </section>
     </header>
 
-<!-------------------------------- Card Section ------------------------------------------------>
+    <!-------------------------------- Card Section ------------------------------------------------>
 
     <main class="flex flex-col md:flex-row justify-between p-8 md:p-20">
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-15">
+        <div
+          class="flex flex-col gap-5 justify-between bg-white card w-full p-5 md:p-8 rounded-3xl shadow-[0_2px_6px_rgba(0,0,0,0.1)]"
+        >
+          <div class="flex items-center justify-between">
+            <img
+              class="bg-[#FFE3E2] p-3 rounded-[18px] max-w-20"
+              src="assets/ambulance.png"
+              alt=""
+            />
+            <i class="text-[#5C5C5C] fa-regular fa-heart text-[30px]"></i>
+          </div>
 
-        <section class=" grid grid-cols-1 md:grid-cols-3 gap-15">
+          <div>
+            <h2 class="text-[24px] font-semibold">National Emergency Number</h2>
+            <p class="text-[#5C5C5C] text-[18px]">National Emergency</p>
+            <h5 class="mb-2 text-[32px] font-semibold">999</h5>
+            <span class="bg-[#F2F2F2] px-5 py-2 rounded-full text-[18px]"
+              >All</span
+            >
+          </div>
 
-            <div class=" flex flex-col gap-5 justify-between bg-white card w-full p-10 rounded-3xl shadow-lg ">
-                <div class="flex items-center justify-between">
-                    <img class="bg-[#FFE3E2] p-3 rounded-[18px] max-w-20" src="assets/ambulance.png" alt=""> 
-                    <i class="text-[#5C5C5C] fa-regular fa-heart text-[30px]"></i>
-                </div>
+          <div class="flex gap-4">
+            <button
+              class="text-[#5C5C5C] text-[18px] border-2 border-[#D4D6D5] py-3 w-full rounded-2xl"
+            >
+              <i class="fa-regular fa-copy mr-3"></i>Copy
+            </button>
 
-                <div>
-                    <h2 class="text-[24px] font-semibold">National Emergency Number</h2>
-                    <p class="text-[#5C5C5C] text-[18px]">National Emergency</p>
-                    <h5 class="mb-2 text-[32px] font-semibold">999</h5>
-                    <span class=" bg-[#F2F2F2] px-5 py-2 rounded-full text-[18px]">All</span>
-                </div>
+            <button
+              class="bg-[#00A63E] text-[#ffff] text-[18px] py-3 w-full rounded-2xl"
+            >
+              <i class="fa-solid fa-phone mr-3"></i>Call
+            </button>
+          </div>
+        </div>
+      </section>
 
-                <div class="flex gap-4">
-                    <button class="text-[#5C5C5C] text-[18px] border-2 border-[#D4D6D5] py-3 w-full rounded-2xl">
-                    <i class="fa-regular fa-copy mr-3 "></i>Copy</button>
-
-                    <button class="bg-[#00A63E] text-[#ffff] text-[18px] py-3 w-full rounded-2xl">
-                    <i class="fa-solid fa-phone mr-3"></i>Call</button>
-
-                </div>
-
-            </div>
-
-            
-        </section>
-
-        
-
-        <section class="h-full md:w-1/4 bg-white">
-            <h5>df</h5>
-
-        </section>
-
+      <section class="h-full md:w-1/4 bg-white">
+        <h5>df</h5>
+      </section>
     </main>
 
     <script src="index.js"></script>
