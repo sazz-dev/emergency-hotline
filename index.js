@@ -60,7 +60,7 @@ for (let i = 0; i < callButtons.length; i++) {
     coinCount -= 20;
     coinDisplay.textContent = coinCount;
 
-    alert(`☎️ Calling ${serviceName} : ${number}`);
+    alert(`☎️ Calling... ${serviceName} : ${number}`);
 
     // Call history
 
