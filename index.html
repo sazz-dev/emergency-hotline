@@ -80,10 +80,9 @@
     
     <main class="flex flex-col-reverse gap-10 md:flex-row justify-between py-10 px-5 md:p-20">
 
-<!-------------------------------- Card Section ------------------------------------------------>
-
       <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-
+        
+<!-------------------------------- National Emergency Card Section ------------------------------------------------>
         <div
           class="info-card flex flex-col gap-5 justify-between bg-white w-full p-5 md:p-8 rounded-3xl shadow-[0_2px_6px_rgba(0,0,0,0.1)]"
         >
@@ -122,24 +121,24 @@
 
  <!-------------------------------- Police Helpline Number ------------------------------------------------>
 
-         <div
+        <div
           class="info-card flex flex-col gap-5 justify-between bg-white w-full p-5 md:p-8 rounded-3xl shadow-[0_2px_6px_rgba(0,0,0,0.1)]"
         >
           <div class="flex items-center justify-between">
             <img
-              class="bg-[#FFE3E2] p-4 rounded-[18px] max-w-20"
-              src="assets/ambulance.png"
+              class="bg-[#DFEFFF] p-4 rounded-[18px] max-w-20"
+              src="assets/police.png"
               alt=""
             />
             <i class="heart-icon text-[#5C5C5C] fa-regular fa-heart text-[30px]"></i>
           </div>
 
           <div id="hotline1" class="hotline-container">
-            <h2 class="text-[24px] font-semibold">National Emergency Number</h2>
-            <p class="service-name text-[#5C5C5C] text-[18px]">National Emergency</p>
-            <h5 class="hotline-number mb-2 text-[32px] font-semibold">45789</h5>
+            <h2 class="text-[24px] font-semibold">Police Helpline Number</h2>
+            <p class="service-name text-[#5C5C5C] text-[18px]">Police</p>
+            <h5 class="hotline-number mb-2 text-[32px] font-semibold">999</h5>
             <span class="bg-[#F2F2F2] px-5 py-2 rounded-full text-[18px]"
-              >All</span
+              >Police</span
             >
           </div>
 
@@ -158,105 +157,285 @@
           </div>
         </div>
 
-
  <!-------------------------------- Fire Service Number ------------------------------------------------>
 
+        <div
+          class="info-card flex flex-col gap-5 justify-between bg-white w-full p-5 md:p-8 rounded-3xl shadow-[0_2px_6px_rgba(0,0,0,0.1)]"
+        >
+          <div class="flex items-center justify-between">
+            <img
+              class="bg-[#FFE3E2] p-4 rounded-[18px] max-w-20"
+              src="assets/fire-service.png"
+              alt=""
+            />
+            <i class="heart-icon text-[#5C5C5C] fa-regular fa-heart text-[30px]"></i>
+          </div>
+
+          <div id="hotline1" class="hotline-container">
+            <h2 class="text-[24px] font-semibold">Fire Service Number</h2>
+            <p class="service-name text-[#5C5C5C] text-[18px]">Fire Service</p>
+            <h5 class="hotline-number mb-2 text-[32px] font-semibold">999</h5>
+            <span class="bg-[#F2F2F2] px-5 py-2 rounded-full text-[18px]"
+              >Fire</span
+            >
+          </div>
+
+          <div class="button-container flex gap-4">
+            <button onclick="copyText()"
+              class="copy-btn text-[#5C5C5C] text-[18px] border-2 border-[#D4D6D5] py-3 w-full rounded-2xl"
+            >
+              <i class="fa-regular fa-copy mr-3"></i>Copy
+            </button>
+
+            <button
+              class="call-btn bg-[#00A63E] text-[#ffff] text-[18px] py-3 w-full rounded-2xl"
+            >
+              <i class="fa-solid fa-phone mr-3"></i>Call
+            </button>
+          </div>
+        </div>
  
  <!-------------------------------- Ambulance Service ------------------------------------------------>
 
+        <div
+          class="info-card flex flex-col gap-5 justify-between bg-white w-full p-5 md:p-8 rounded-3xl shadow-[0_2px_6px_rgba(0,0,0,0.1)]"
+        >
+          <div class="flex items-center justify-between">
+            <img
+              class="bg-[#FFE3E2] p-4 rounded-[18px] max-w-20"
+              src="assets/ambulance.png"
+              alt=""
+            />
+            <i class="heart-icon text-[#5C5C5C] fa-regular fa-heart text-[30px]"></i>
+          </div>
+
+          <div id="hotline1" class="hotline-container">
+            <h2 class="text-[24px] font-semibold">Ambulance Service</h2>
+            <p class="service-name text-[#5C5C5C] text-[18px]">Ambulance</p>
+            <h5 class="hotline-number mb-2 text-[32px] font-semibold">1994-999999</h5>
+            <span class="bg-[#F2F2F2] px-5 py-2 rounded-full text-[18px]"
+              >Health</span
+            >
+          </div>
+
+          <div class="button-container flex gap-4">
+            <button onclick="copyText()"
+              class="copy-btn text-[#5C5C5C] text-[18px] border-2 border-[#D4D6D5] py-3 w-full rounded-2xl"
+            >
+              <i class="fa-regular fa-copy mr-3"></i>Copy
+            </button>
+
+            <button
+              class="call-btn bg-[#00A63E] text-[#ffff] text-[18px] py-3 w-full rounded-2xl"
+            >
+              <i class="fa-solid fa-phone mr-3"></i>Call
+            </button>
+          </div>
+        </div>
 
  <!-------------------------------- Women & Child Helpline ------------------------------------------------>
 
+        <div
+          class="info-card flex flex-col gap-5 justify-between bg-white w-full p-5 md:p-8 rounded-3xl shadow-[0_2px_6px_rgba(0,0,0,0.1)]"
+        >
+          <div class="flex items-center justify-between">
+            <img
+              class="bg-[#FFE3E2] p-4 rounded-[18px] max-w-20"
+              src="assets/emergency.png"
+              alt=""
+            />
+            <i class="heart-icon text-[#5C5C5C] fa-regular fa-heart text-[30px]"></i>
+          </div>
+
+          <div id="hotline1" class="hotline-container">
+            <h2 class="text-[24px] font-semibold">Women & Child Helpline</h2>
+            <p class="service-name text-[#5C5C5C] text-[18px]">Women & Child Helpline</p>
+            <h5 class="hotline-number mb-2 text-[32px] font-semibold">109</h5>
+            <span class="bg-[#F2F2F2] px-5 py-2 rounded-full text-[18px]"
+              >Help</span
+            >
+          </div>
+
+          <div class="button-container flex gap-4">
+            <button onclick="copyText()"
+              class="copy-btn text-[#5C5C5C] text-[18px] border-2 border-[#D4D6D5] py-3 w-full rounded-2xl"
+            >
+              <i class="fa-regular fa-copy mr-3"></i>Copy
+            </button>
+
+            <button
+              class="call-btn bg-[#00A63E] text-[#ffff] text-[18px] py-3 w-full rounded-2xl"
+            >
+              <i class="fa-solid fa-phone mr-3"></i>Call
+            </button>
+          </div>
+        </div>
+
  <!-------------------------------- Anti-Corruption Helpline ------------------------------------------------>
+
+        <div
+          class="info-card flex flex-col gap-5 justify-between bg-white w-full p-5 md:p-8 rounded-3xl shadow-[0_2px_6px_rgba(0,0,0,0.1)]"
+        >
+          <div class="flex items-center justify-between">
+            <img
+              class="bg-[#FFE3E2] p-4 rounded-[18px] max-w-20"
+              src="assets/emergency.png"
+              alt=""
+            />
+            <i class="heart-icon text-[#5C5C5C] fa-regular fa-heart text-[30px]"></i>
+          </div>
+
+          <div id="hotline1" class="hotline-container">
+            <h2 class="text-[24px] font-semibold">Anti-Corruption Helpline</h2>
+            <p class="service-name text-[#5C5C5C] text-[18px]">Anti-Corruption</p>
+            <h5 class="hotline-number mb-2 text-[32px] font-semibold">106</h5>
+            <span class="bg-[#F2F2F2] px-5 py-2 rounded-full text-[18px]"
+              >Govt.</span
+            >
+          </div>
+
+          <div class="button-container flex gap-4">
+            <button onclick="copyText()"
+              class="copy-btn text-[#5C5C5C] text-[18px] border-2 border-[#D4D6D5] py-3 w-full rounded-2xl"
+            >
+              <i class="fa-regular fa-copy mr-3"></i>Copy
+            </button>
+
+            <button
+              class="call-btn bg-[#00A63E] text-[#ffff] text-[18px] py-3 w-full rounded-2xl"
+            >
+              <i class="fa-solid fa-phone mr-3"></i>Call
+            </button>
+          </div>
+        </div>
 
  <!-------------------------------- Electricity Helpline ------------------------------------------------>
 
         <div
-          class="flex flex-col gap-5 justify-between bg-white card w-full p-5 md:p-8 rounded-3xl shadow-[0_2px_6px_rgba(0,0,0,0.1)]"
+          class="info-card flex flex-col gap-5 justify-between bg-white w-full p-5 md:p-8 rounded-3xl shadow-[0_2px_6px_rgba(0,0,0,0.1)]"
         >
           <div class="flex items-center justify-between">
             <img
-              class="bg-[#FFE3E2] p-3 rounded-[18px] max-w-20"
+              class="bg-[#FFE3E2] p-4 rounded-[18px] max-w-20"
               src="assets/emergency.png"
               alt=""
             />
-            <i class="text-[#5C5C5C] fa-regular fa-heart text-[30px]"></i>
+            <i class="heart-icon text-[#5C5C5C] fa-regular fa-heart text-[30px]"></i>
           </div>
 
-          <div>
+          <div id="hotline1" class="hotline-container">
             <h2 class="text-[24px] font-semibold">Electricity Helpline</h2>
-            <p class="text-[#5C5C5C] text-[18px]">Electricity Outage</p>
-            <h5 class="mb-2 text-[32px] font-semibold">16216</h5>
+            <p class="service-name text-[#5C5C5C] text-[18px]">Electricity Outage</p>
+            <h5 class="hotline-number mb-2 text-[32px] font-semibold">16216</h5>
             <span class="bg-[#F2F2F2] px-5 py-2 rounded-full text-[18px]"
               >Electricity</span
             >
           </div>
 
-          <div class="flex gap-4">
-            <button
-              class="text-[#5C5C5C] text-[18px] border-2 border-[#D4D6D5] py-3 w-full rounded-2xl"
+          <div class="button-container flex gap-4">
+            <button onclick="copyText()"
+              class="copy-btn text-[#5C5C5C] text-[18px] border-2 border-[#D4D6D5] py-3 w-full rounded-2xl"
             >
               <i class="fa-regular fa-copy mr-3"></i>Copy
             </button>
 
             <button
-              class="bg-[#00A63E] text-[#ffff] text-[18px] py-3 w-full rounded-2xl"
+              class="call-btn bg-[#00A63E] text-[#ffff] text-[18px] py-3 w-full rounded-2xl"
             >
               <i class="fa-solid fa-phone mr-3"></i>Call
             </button>
           </div>
         </div>
+
  <!-------------------------------- Brac Helpline ------------------------------------------------>
 
         <div
-          class="flex flex-col gap-5 justify-between bg-white card w-full p-5 md:p-8 rounded-3xl shadow-[0_2px_6px_rgba(0,0,0,0.1)]"
+          class="info-card flex flex-col gap-5 justify-between bg-white w-full p-5 md:p-8 rounded-3xl shadow-[0_2px_6px_rgba(0,0,0,0.1)]"
         >
           <div class="flex items-center justify-between">
             <img
-              class="bg-[#FFE3E2] p-3 rounded-[18px] max-w-20"
+              class="bg-[#FFE3E2] p-4 rounded-[18px] max-w-20"
               src="assets/emergency.png"
               alt=""
             />
-            <i class="text-[#5C5C5C] fa-regular fa-heart text-[30px]"></i>
+            <i class="heart-icon text-[#5C5C5C] fa-regular fa-heart text-[30px]"></i>
           </div>
 
-          <div>
+          <div id="hotline1" class="hotline-container">
             <h2 class="text-[24px] font-semibold">Brac Helpline</h2>
-            <p class="text-[#5C5C5C] text-[18px]">Brac</p>
-            <h5 class="mb-2 text-[32px] font-semibold">16445</h5>
+            <p class="service-name text-[#5C5C5C] text-[18px]">Brac</p>
+            <h5 class="hotline-number mb-2 text-[32px] font-semibold">16445</h5>
             <span class="bg-[#F2F2F2] px-5 py-2 rounded-full text-[18px]"
               >NGO</span
             >
           </div>
 
-          <div class="flex gap-4">
-            <button
-              class="text-[#5C5C5C] text-[18px] border-2 border-[#D4D6D5] py-3 w-full rounded-2xl"
+          <div class="button-container flex gap-4">
+            <button onclick="copyText()"
+              class="copy-btn text-[#5C5C5C] text-[18px] border-2 border-[#D4D6D5] py-3 w-full rounded-2xl"
             >
               <i class="fa-regular fa-copy mr-3"></i>Copy
             </button>
 
             <button
-              class="bg-[#00A63E] text-[#ffff] text-[18px] py-3 w-full rounded-2xl"
+              class="call-btn bg-[#00A63E] text-[#ffff] text-[18px] py-3 w-full rounded-2xl"
             >
               <i class="fa-solid fa-phone mr-3"></i>Call
             </button>
           </div>
         </div>
+
  <!-------------------------------- Bangladesh Railway Helpline  ------------------------------------------------>
 
+
+       <div
+          class="info-card flex flex-col gap-5 justify-between bg-white w-full p-5 md:p-8 rounded-3xl shadow-[0_2px_6px_rgba(0,0,0,0.1)]"
+        >
+          <div class="flex items-center justify-between">
+            <img
+              class="bg-[#FFE3E2] p-4 rounded-[18px] max-w-20"
+              src="assets/emergency.png"
+              alt=""
+            />
+            <i class="heart-icon text-[#5C5C5C] fa-regular fa-heart text-[30px]"></i>
+          </div>
+
+          <div id="hotline1" class="hotline-container">
+            <h2 class="text-[24px] font-semibold">Bangladesh Railway Helpline </h2>
+            <p class="service-name text-[#5C5C5C] text-[18px]">Bangladesh Railway</p>
+            <h5 class="hotline-number mb-2 text-[32px] font-semibold">163</h5>
+            <span class="bg-[#F2F2F2] px-5 py-2 rounded-full text-[18px]"
+              >Travel</span
+            >
+          </div>
+
+          <div class="button-container flex gap-4">
+            <button onclick="copyText()"
+              class="copy-btn text-[#5C5C5C] text-[18px] border-2 border-[#D4D6D5] py-3 w-full rounded-2xl"
+            >
+              <i class="fa-regular fa-copy mr-3"></i>Copy
+            </button>
+
+            <button
+              class="call-btn bg-[#00A63E] text-[#ffff] text-[18px] py-3 w-full rounded-2xl"
+            >
+              <i class="fa-solid fa-phone mr-3"></i>Call
+            </button>
+          </div>
+        </div>
 
 </section>
 
     <!-------------------------------- SidBar Section ------------------------------------------------>
 
       <section class="md:w-2/7 md:sticky md:top-12 md:h-[800px]  bg-white p-5 rounded-3xl shadow-[0_2px_6px_rgba(0,0,0,0.1)] ">
+       
         <div class="flex items-center justify-between">
         <h5 class="text-[20px] md:text-[24px] font-semibold"><i class="fa-regular fa-clock"></i> Call History</h5>
         <button id="clear-history" class="text-[18px] text-white py-1 md:py-3 px-3 md:px-8 rounded-full bg-[#00A63E]">Clear</button>
         </div>
         
-        <div class="history-sidebar flex flex-col gap-5 mt-6 ">
+        <div id="history-sidebar" class="flex flex-col gap-5 mt-6 ">
 
         </div>
  

@@ -10,8 +10,6 @@ for (let i = 0; i < hearts.length; i++) {
   });
 }
 
-
-
 //Copy Hotline Number
 
 const copyButtons = document.getElementsByClassName("copy-btn");
@@ -40,92 +38,49 @@ for (let i = 0; i < copyButtons.length; i++) {
   });
 }
 
-
-/*
-
-const serviceData = [];
-
-const callButton = document.getElementsByClassName("call-btn");
-const countSection = document.getElementById("coin-count");
-const serviceNameAlert = document.getElementById("service-name");
-
-let coinCount = 0;
-
-for (let i = 0; i < callButton.length; i++) {
-  callButton[i].addEventListener("click", function () {
-    const button = callButton[i];
-    const card = button.closest(".info-card");
-    if (!card) return;
-    const hotline = card.getElementsByClassName("hotline-number")[0];
-    if (!hotline) return;
-    const number = hotline.textContent;
-
-
-        const data = {
-      serviceName: "National Emergency Number",
-      hotline: "999",
-      date: new Date().toLocaleTimeString(),
-    };
-    serviceData.push(data);
-
-    alert(serviceNameAlert + number)
-
-  });
-}
-
-
-*/
-
-
-
-const callButtons = document.getElementsByClassName('call-btn');
-const coinDisplay = document.getElementById('coin-count');
-
-const callHistorySection = document.querySelector('.history-sidebar');
+const callButtons = document.getElementsByClassName("call-btn");
+const coinDisplay = document.getElementById("coin-count");
 let coinCount = parseInt(coinDisplay.textContent);
 
+const callHistorySection = document.getElementById("history-sidebar");
+
 for (let i = 0; i < callButtons.length; i++) {
-  callButtons[i].addEventListener('click', function() {
-    const card = callButtons[i].closest('.info-card');
+  callButtons[i].addEventListener("click", function () {
+    const card = this.closest(".info-card");
     if (!card) return;
 
-    const hotlineElem = card.getElementsByClassName('hotline-number')[0];
-    const serviceNameElem = card.getElementsByClassName('service-name')[0];
+    const serviceName = card.querySelector(".service-name").textContent;
+    const number = card.querySelector(".hotline-number").textContent;
 
-    if (!hotlineElem || !serviceNameElem) return;
-
-    const number = hotlineElem.textContent.trim();
-    const serviceName = serviceNameElem.textContent.trim();
-
-    // coin check
     if (coinCount < 20) {
-      alert("You do not have enough coins to make this call!");
+      alert("You do not have enough coins! must 20 conins need");
       return;
     }
 
-    // coin deduct
     coinCount -= 20;
     coinDisplay.textContent = coinCount;
 
-    // alert
-    alert(`${serviceName} : ${number}`);
+    alert(`☎️ Calling ${serviceName} : ${number}`);
 
-    // Add to call history
+    // Call history
+
     const historyItem = document.createElement("div");
-    historyItem.className = "bg-[#F6F6F6] px-5 py-3 rounded-2xl flex justify-between";
+    historyItem.className = "history-sidebar";
     historyItem.innerHTML = `
      
-    
-
-    
-    <div>
+        <div class="bg-[#F6F6F6] px-5 py-3 rounded-2xl flex justify-between">
+        <div>
         <h2 class="font-medium text-[18px] md:text-[22px]">${serviceName}</h2>
         <p class="text-[24px] text-[#5C5C5C]">${number}</p>
+        </div>
+        <p class="text-[18px]">${new Date().toLocaleTimeString()}</p>
       </div>
-      <p class="text-[18px]">${new Date().toLocaleTimeString()}</p>
     `;
     callHistorySection.prepend(historyItem);
   });
 }
 
-
+// Clear Button
+document.getElementById("clear-history").addEventListener("click", function () {
+  callHistorySection.innerHTML = "";
+});
